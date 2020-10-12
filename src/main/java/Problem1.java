@@ -1,3 +1,10 @@
+/*
+    Nam Nguyen
+    October 16, 2020
+    CS 143B
+    Homework_2
+ */
+
 public class Problem1 {
 
     /*
