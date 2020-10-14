@@ -7,13 +7,19 @@ public class Problem2Test {
     public void testRemoveDuplicates() {
         int[][] inputs = {
                 // DO NOT REMOVE OR CHANGE THE GIVEN TEST CASES!
-                {0, 0, 1, 1, 1, 2, 2, 4, 4, 6}
+                {0, 0, 1, 1, 1, 2, 2, 4, 4, 6},
                 // add more test cases
+                {},
+                {1,1,1,1},
+                {5,5,6,7,9,9,9,10,10,11}
         };
 
         int[][] expects = {
-                {0, 1, 2, 4, 6}
+                {0, 1, 2, 4, 6},
                 // add more test cases
+                {},
+                {1},
+                {5,6,7,9,10,11}
         };
 
         assertEquals(expects.length, inputs.length);
