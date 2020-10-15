@@ -7,11 +7,15 @@ public class BookRomance extends Book {
     public BookRomance(String title, String author) {
         // homework
         // tip: use the 'super' keyword
+        super.title = title;
+        super.author = author;
     }
 
     public BookRomance(BookRomance anotherBook) {
         // homework
         // tip: use the 'super' keyword
+        super.title = anotherBook.title;
+        super.author = anotherBook.author;
     }
 
     @Override
@@ -22,5 +26,6 @@ public class BookRomance extends Book {
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
         // homework
+        return(numOfDaysPastDue * lateFeePerDayInDollar);
     }
 }
