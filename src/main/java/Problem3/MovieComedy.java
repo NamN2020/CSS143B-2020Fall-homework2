@@ -1,3 +1,10 @@
+/*
+    Nam Nguyen
+    October 19, 2020
+    CS 143B
+    Homework_2
+ */
+
 package Problem3;
 
 import java.util.UUID;
@@ -28,6 +35,10 @@ public class MovieComedy extends Movie {
     @Override
     public int calcLateFees(int numOfDaysPastDue) {
         // homework
-        return(numOfDaysPastDue * lateFeePerDayInDollar);
+        if(numOfDaysPastDue > 0){
+            return (numOfDaysPastDue * lateFeePerDayInDollar);
+        } else {
+            return 0;
+        }
     }
 }

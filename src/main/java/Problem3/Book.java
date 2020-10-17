@@ -1,3 +1,10 @@
+/*
+    Nam Nguyen
+    October 19, 2020
+    CS 143B
+    Homework_2
+ */
+
 package Problem3;
 
 import java.util.UUID;
