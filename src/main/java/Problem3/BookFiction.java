@@ -9,8 +9,7 @@ public class BookFiction extends Book {
     public BookFiction(String title, String author, String genres) {
         // homework
         // tip: use the 'super' keyword
-        super.title = title;
-        super.author = author;
+        super(title, author);
         this.genres = genres;
     }
 
@@ -18,8 +17,11 @@ public class BookFiction extends Book {
     public BookFiction(BookFiction anotherBook) {
         // homework
         // tip: use the 'super' keyword
-        super.title = anotherBook.title;
-        super.author = anotherBook.author;
+        super(anotherBook);
+        this.title = anotherBook.title;
+        this.author = anotherBook.author;
+        this.id = anotherBook.id;
+        this.genres = anotherBook.genres;
     }
 
     @Override

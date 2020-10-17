@@ -8,15 +8,16 @@ public class MovieComedy extends Movie {
     public MovieComedy(String rating, String title) {
         // homework
         // tip: use the 'super' keyword
-        super.rating = rating;
-        super.title = title;
+        super(rating, title);
     }
 
     public MovieComedy(MovieComedy anotherMovie) {
         // homework
         // tip: use the 'super' keyword
-        super.title = anotherMovie.title;
-        this.id = UUID.randomUUID();
+        super(anotherMovie);
+        this.title = anotherMovie.title;
+        this.rating = anotherMovie.rating;
+        this.id = anotherMovie.id;
     }
 
     @Override

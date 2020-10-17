@@ -7,15 +7,16 @@ public class BookRomance extends Book {
     public BookRomance(String title, String author) {
         // homework
         // tip: use the 'super' keyword
-        super.title = title;
-        super.author = author;
+       super(title, author);
     }
 
     public BookRomance(BookRomance anotherBook) {
         // homework
         // tip: use the 'super' keyword
-        super.title = anotherBook.title;
-        super.author = anotherBook.author;
+        super(anotherBook);
+        this.title = anotherBook.title;
+        this.author = anotherBook.author;
+        this.id = anotherBook.id;
     }
 
     @Override

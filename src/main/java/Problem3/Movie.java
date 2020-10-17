@@ -30,10 +30,11 @@ public abstract class Movie implements StoreMediaOperations {
             return false;
         } else if (getClass() != obj.getClass()){
             return false;
-        } else {
-            Movie otherMovie = (Movie) obj;
-
-            return (super.equals(otherMovie) && id == otherMovie.id);
         }
+
+        Movie otherMovie = (Movie) obj;
+
+        return (this.id == otherMovie.id);
+
     }
 }

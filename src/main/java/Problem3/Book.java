@@ -28,12 +28,13 @@ public abstract class Book implements StoreMediaOperations {
         // homework
         if(obj == null){
             return false;
-        } else if (getClass() != obj.getClass()){
+        } else if (this.getClass() != obj.getClass()){
             return false;
-        } else {
-            Book otherBook = (Book) obj;
-
-            return (super.equals(otherBook) && id == otherBook.id);
         }
+
+        Book otherBook = (Book) obj;
+
+        return (this.id == otherBook.id);
+
     }
 }

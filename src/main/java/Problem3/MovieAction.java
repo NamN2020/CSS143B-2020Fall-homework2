@@ -7,15 +7,15 @@ public class MovieAction extends Movie {
     public MovieAction(String rating, String title) {
         // homework
         // tip: use the 'super' keyword
-        super.rating = rating;
-        super.title = title;
+        super(rating, title);
     }
 
     public MovieAction(MovieAction anotherMovie) {
         // homework
         // tip: use the 'super' keyword
-        super.rating = anotherMovie.rating;
-        super.title = anotherMovie.title;
+        super(anotherMovie);
+        this.rating = anotherMovie.rating;
+        this.title = anotherMovie.title;
     }
 
     @Override
