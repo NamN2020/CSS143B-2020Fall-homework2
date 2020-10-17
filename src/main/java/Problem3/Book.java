@@ -1,3 +1,10 @@
+/*
+    Nam Nguyen
+    October 19, 2020
+    CS 143B
+    Homework_2
+ */
+
 package Problem3;
 
 import java.util.UUID;
@@ -16,10 +23,25 @@ public abstract class Book implements StoreMediaOperations {
     // copy constructor
     public Book(Book anotherBook) {
         // homework
+        this.title = anotherBook.title;
+        this.author = anotherBook.author;
+        this.id = anotherBook.id;
     }
+
+    public Book(){}
 
     @Override
     public boolean equals(Object obj) {
         // homework
+        if(obj == null){
+            return false;
+        } else if (this.getClass() != obj.getClass()){
+            return false;
+        }
+
+        Book otherBook = (Book) obj;
+
+        return (this.id == otherBook.id);
+
     }
 }
